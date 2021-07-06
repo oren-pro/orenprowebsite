@@ -1,0 +1,56 @@
+.desktop {
+    display: block;
+}
+
+.desktop_inline {
+    display: inline-block;
+}
+
+.desktop_flex {
+    display: flex;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile_inline {
+    display: none;
+}
+
+
+
+@media (max-width: $mobileMaxWidth) {
+    .desktop {
+        display: none;
+    }
+
+    .desktop_inline {
+        display: none;
+    }
+
+    .desktop_flex {
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .mobile_inline {
+        display: inline-block;
+    }
+}
+
+
+.btn_accessibility{
+    display: none !important;
+}
+
+.backoffice__gray__text {
+    color: $gray;
+}
+
+.cursor__hand {
+    cursor: pointer;
+}

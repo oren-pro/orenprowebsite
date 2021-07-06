@@ -1,0 +1,120 @@
+$pageUpImageMarginLeft: 45.5rem;
+
+.pageup__image {
+    position: relative;
+    left: 50%;
+    margin-left: $pageUpImageMarginLeft;
+    width: 3.5rem;
+    height: 3.6rem;
+    background-image: url('/images/common/pageup.svg');
+    background-repeat: no-repeat;
+    background-size: 3.5rem 3.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.pageup__image__hover {
+    background-image: url('/images/common/pageup-over.svg');
+    position: absolute;
+    z-index: 7001;
+    opacity: 0;
+}
+
+.pageup__image__fake {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: $pageUpImageMarginLeft;
+    width: 3.5rem;
+    height: 3.6rem;
+    margin-bottom: 1rem;
+}
+
+.pageup__image__absolute {
+    position: absolute;
+    z-index: 58;
+    left: 50%;
+    margin-left: $pageUpImageMarginLeft;
+    top: 105vh;
+    width: 3.5rem;
+    height: 3.6rem;
+    background-image: url('/images/common/pageup.svg');
+    background-repeat: no-repeat;
+    background-size: 3.5rem 3.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.pageup__image__absolute__homepage {
+    position: absolute;
+    z-index: 58;
+    left: 50%;
+    margin-left: $pageUpImageMarginLeft;
+    top: 205vh;
+    width: 3.5rem;
+    height: 3.6rem;
+    background-image: url('/images/common/pageup.svg');
+    background-repeat: no-repeat;
+    background-size: 3.5rem 3.6rem;
+    margin-bottom: 1rem;
+}
+
+.pageup__image__fixed {
+    position: fixed;
+    z-index: 58;
+    left: 50%;
+    margin-left: $pageUpImageMarginLeft;
+    top: 90vh;
+    width: 3.5rem;
+    height: 3.6rem;
+    background-image: url('/images/common/pageup.svg');
+    background-repeat: no-repeat;
+    background-size: 3.5rem 3.6rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.pageup__image:hover {
+    background-image: url('/images/common/pageup-over.svg');
+}
+
+.pageup__image__absolute:hover {
+    background-image: url('/images/common/pageup-over.svg');
+}
+
+.pageup__image__absolute__homepage:hover {
+    background-image: url('/images/common/pageup-over.svg');
+}
+
+.pageup__image__fixed:hover {
+    background-image: url('/images/common/pageup-over.svg');
+}
+
+$tabletMarginLeft: 43vw;
+@media (max-width: $tabletMaxWidth) {
+    .pageup__image {
+        margin-left: $tabletMarginLeft;
+    }
+
+    .pageup__image__fake {
+        left: $tabletMarginLeft;
+    }
+
+    .pageup__image__absolute {
+        margin-left: $tabletMarginLeft;
+    }
+
+    .pageup__image__absolute__homepage {
+        margin-left: $tabletMarginLeft;
+    }
+
+    .pageup__image__fixed {
+        margin-left: $tabletMarginLeft;
+    }
+}
+
+@media (max-width: $mobileMaxWidth) {
+    .pageup__image {
+        left: 30rem;
+    }
+}

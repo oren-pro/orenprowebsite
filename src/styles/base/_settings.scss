@@ -1,0 +1,47 @@
+.top__text{
+    position: fixed;
+    top: 20;
+    left: 20;
+    z-index: 50000;
+    color: #fff;
+}
+
+// Colors
+$white:  #fff;
+$gray: #666665;
+$green: #53b0a1;
+$yellow: #fcc130;
+
+//fonts
+$fontRegular: 'Heebo-Regular', sans-serif;
+$fontMedium: 'Heebo-Medium', sans-serif;
+$fontBold: 'Heebo-Bold', sans-serif;
+
+//font-size
+$fontSizeRegular: 400;
+$fontSizeMedium: 500;
+$fontSizeBold: 700;
+
+
+// Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem;
+
+//time
+$buttonScaleTime: 40ms;
+$transitionTime: 0.2s;
+
+// media sizes
+$mobileMaxWidth: 767px;
+$tabletMaxWidth: 949px;
+
+// font sizes
+$textMobileSize: 2.4rem;
+$textMobileLineHeight: 2.7rem;
+
+$textHeaderMobileSize: 3rem;
+
+$textHeaderEventMobileSize: 3.3rem;
