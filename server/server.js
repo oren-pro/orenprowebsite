@@ -22,10 +22,10 @@ app.use(function forceHTTPS(req, res, next) {
   console.log(local);
   console.log(schema);
   console.log(www);
- //  || www.indexOf('www') < 0
-  // if (schema !== 'https') {
-  //   return res.redirect('https://oren-pro-website-18.herokuapp.com/' + local);
-  // }
+  // || www.indexOf('www') < 0
+  if (schema !== 'https') {
+    return res.redirect('https://www.oren-pro.com/' + local);
+  }
 
   return next();
 
