@@ -22,9 +22,8 @@ app.use(function forceHTTPS(req, res, next) {
   console.log(local);
   console.log(schema);
   console.log(www);
-  // || www.indexOf('www') < 0
   if (schema !== 'https') {
-    return res.redirect('https://www.oren-pro.com/' + local);
+    return res.redirect('https://www.oren-pro.com' + local);
   }
 
   return next();
